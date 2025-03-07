@@ -1,54 +1,25 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🛍️ Admin Dashboard
 
-Currently, two official plugins are available:
+A **React + TypeScript** admin panel with **state management using Zustand**, API integration using **React Query**, and a responsive **Material UI-based sidebar**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **Authentication**: Admin login/logout with Zustand for state management.
+- **Product Management**: Add, edit, delete, and view products.
+- **User Management**: View, search, and edit user details.
+- **Cart Management**: Handle cart items and total price calculations.
+- **Order Management**: Fetch orders, update order status.
+- **Blog & Comments**: View and manage posts/comments.
+- **Quotes & Recipes**: Fetch and display motivational quotes & recipes.
+- **Responsive Sidebar**: Expand/collapse menu with smooth transitions.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Tech Stack
+- **Frontend**: React + TypeScript
+- **State Management**: Zustand
+- **UI Components**: Material UI (MUI), Ant design
+- **Routing**: React Router
+- **Data Fetching**: React Query + Axios
+- **Backend API**: [DummyJSON API](https://dummyjson.com/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
