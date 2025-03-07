@@ -23,3 +23,6 @@ A **React + TypeScript** admin panel with **state management using Zustand**, AP
 - **Backend API**: [DummyJSON API](https://dummyjson.com/)
 
 
+## Demo Video Link :
+https://drive.google.com/file/d/1CJUSIKyqM--9NX_oAQ9NWOSfW94jOXh9/view?usp=drive_link
+
