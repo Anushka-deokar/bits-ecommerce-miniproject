@@ -26,3 +26,7 @@ A **React + TypeScript** admin panel with **state management using Zustand**, AP
 ## Demo Video Link :
 https://drive.google.com/file/d/1CJUSIKyqM--9NX_oAQ9NWOSfW94jOXh9/view?usp=drive_link
 
+## Credentials :
+     username : emilys
+     password : emilyspass
+
